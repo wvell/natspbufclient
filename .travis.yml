@@ -6,6 +6,7 @@ notifications:
 install:
   - export PATH=$PATH:$HOME/gopath/bin
   - go get gopkg.in/mgo.v2
+  - go install github.com/nats-io/gnatsd
 
 script:
   - go test github.com/wvell/natspbufclient
