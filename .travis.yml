@@ -1,0 +1,14 @@
+language: go
+
+notifications:
+  email: false
+
+install:
+  - export PATH=$PATH:$HOME/gopath/bin
+  - go get gopkg.in/mgo.v2
+
+script:
+  - go test github.com/wvell/natspbufclient
+
+go:
+  - 1.4
