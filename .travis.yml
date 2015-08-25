@@ -5,7 +5,7 @@ notifications:
 
 install:
   - export PATH=$PATH:$HOME/gopath/bin
-  - go get gopkg.in/mgo.v2
+  - go get -d
   - go get github.com/nats-io/gnatsd
   - go install github.com/nats-io/gnatsd
 
