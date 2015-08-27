@@ -34,7 +34,7 @@ func TestMain(m *testing.M) {
 }
 
 func NewProtoEncodedConn(t *testing.T) *nats.EncodedConn {
-	ec, err := nats.NewEncodedConn(NewConn(), ENC_NAME)
+	ec, err := nats.NewEncodedConn(NewConn(), PROTOBUF_ENCODER)
 	if err != nil {
 		t.Fatalf("Failed to create an encoded connection: %v\n", err)
 	}
