@@ -9,10 +9,10 @@ import (
 	"github.com/nats-io/nats"
 )
 
-const ENC_NAME = "protobuf"
+const PROTOBUF_ENCODER = "protobuf"
 
 func init() {
-	nats.RegisterEncoder(ENC_NAME, &ProtoEncoder{})
+	nats.RegisterEncoder(PROTOBUF_ENCODER, &ProtoEncoder{})
 }
 
 // A protobuf Encoder implementation for EncodedConn
